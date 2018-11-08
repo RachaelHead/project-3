@@ -29,7 +29,7 @@ $(document).ready(function(){
               },
               plugins: [
                 Taucharts.api.plugins.get('tooltip')({
-                  fields: []
+                  fields: ['User','1000 Tons', 'Year']
                 }),//comma
                 Taucharts.api.plugins.get('legend')(),
               ]//close plugins
@@ -62,7 +62,6 @@ $(document).ready(function(){
                         y: {min: 0, max: 100}
                     },*/
                     color: 'Adult diabetes rate, 2013', // every team will be represented by different color
-                    size: 'Median Household Income, 2015',
                     plugins: [
                       Taucharts.api.plugins.get('tooltip')({
                         fields: ['State', 'County', 'Adult obesity rate, 2013', 'Adult diabetes rate, 2013', 'Median Household Income, 2015']
@@ -112,7 +111,7 @@ $(document).ready(function(){
 });//close ajax
 
         $('#table').DataTable({
-             "ajax":"/js/food-environments.txt",
+             "ajax":"js/food-environments.txt",
              "columns": [
                {"data":"State"},
                {"data":"County"},

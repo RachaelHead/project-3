@@ -1,5 +1,5 @@
-/* BODY AND TEXT STYLING*/
 
+/* BODY AND TEXT STYLING*/
 body{
   display:grid;
   grid-template-columns: 15% 70% 15% ;
@@ -37,8 +37,12 @@ h4{
   margin: 0px 0px 20px 0px;
 }
 
-/* FLEX SPECS */
+.bold{
+  font-weight: 700;
+}
+/* BODY AND TEXT STYLING END*/
 
+/* FLEX SPECS */
 .flex{
     display: flex;
 }
@@ -64,14 +68,17 @@ h4{
 .direction-column{
   flex-direction: column;
 }
+/* FLEX SPECS END*/
 
-/* Style the HEADER*/
+/* HEADER*/
 
 #header{
   grid-column: 1/4;
   grid-row: 1/2;
   background-color: #000000;
 }
+
+  /* Menu is items in the left of the header*/
 
 #menu{
   margin-left: 30px;
@@ -84,14 +91,16 @@ h4{
   font-size: 18px;
 }
 
-/* Style 'Democracy dies in Darkness'*/
+  /* Style 'Democracy dies in Darkness'*/
 
-#slogan {
-  font-family: 'Crimson Text', serif;
-  font-style: italic;
-  color: #DFDFDF;
-  margin: 0px;
-}
+  #slogan {
+    font-family: 'Crimson Text', serif;
+    font-style: italic;
+    color: #DFDFDF;
+    margin: 0px;
+  }
+
+    /* Signup is items in the right of the header*/
 
 #signup{
   margin-right: 30px;
@@ -103,6 +112,8 @@ h4{
   color: #ffffff;
   font-size: 20px;
 }
+
+  /* Styling specific buttons*/
 
 #search, #sections, #signin{
   border: 1px solid #444444;
@@ -142,10 +153,14 @@ h4{
   font-size: 20px;
 }
 
+  /*  dollar is so the "try it for $1" can have text at a lower screen size currently hidden and pushed off to the side*/
+
 #dollar{
   visibility: hidden;
   margin-right: -20px;
 }
+
+  /* Styling header icons*/
 
 #search img{
   width: 20px;
@@ -162,8 +177,9 @@ h4{
   width: 250px;
   margin-top: 0px;
 }
+/* HEADER END*/
 
-/* STYLING OF ARTICLE CONTENT */
+/* ARTICLE CONTENT */
 
 #article{
   grid-column: 2/3;
@@ -177,6 +193,9 @@ h4{
   margin: 10px 0px 10px 0px;
 }
 
+
+ /* ARTICLE CONTENT END */
+
 /* AUTHOR SECTION */
 
 .author{
@@ -187,6 +206,7 @@ h4{
   font-family: 'News Cycle', sans-serif;
   margin: 0px 0px 0px 20px;
 }
+/* AUTHOR SECTION END */
 
 /* CHARTS */
 
@@ -217,6 +237,13 @@ h4{
   width: 500px;
 }
 
+.larger-screen{
+  visibility: hidden;
+  overflow:hidden;
+ }
+/* CHARTS END */
+
+/* COMMENTS */
 .comments p{
   font-family: 'News Cycle', sans-serif;
   font-size: 18px;
@@ -242,7 +269,9 @@ h4{
 .comment-section p{
   font-size: 20px;
 }
+/* COMMENTS END */
 
+/* SUBSCRIBE */
 .post-ad{
   height:200px;
   background-color: #DFDFDF;
@@ -258,7 +287,9 @@ h4{
   font-family: 'News Cycle', sans-serif;
   font-size: 18px;
 }
+/* SUBSCRIBE END*/
 
+/* RECOMMENDED ARTICLES */
 .recommend-dash{
   width: 40px;
   height: 5px;
@@ -300,6 +331,10 @@ h4{
   font-size: 20px;
 }
 
+/* RECOMMENDED ARTICLES END */
+
+/* FOOTER */
+
 .footer p{
   font-family: 'News Cycle', sans-serif;
   color:#444444;
@@ -313,33 +348,22 @@ h4{
   color:#1F1F1F;
   margin-bottom: 30px;
 }
+/* FOOTER END */
 
-.bold{
-  font-weight: 700;
-}
+/* ARTICLE CONTENT END */
 
-.larger-screen{
-  visibility: hidden;
-  overflow:hidden;
- }
 
 @media only screen and (max-width: 600px) {
 
-  #menu p{
-    visibility: hidden;
-    overflow: hidden;
-  }
-
-  #signin p{
-    visibility: hidden;
-    overflow: hidden;
-  }
+  /* HEADER */
 
   .tryit{
     height: 40px;
     width:40px;
     overflow: hidden;
   }
+
+    /* Tryit p being hidden and dollar being visible replaces the longer call to action with a shorter one for small screen sizes*/
 
   .tryit p{
     visibility: hidden;
@@ -351,6 +375,17 @@ h4{
     padding-right: 30px;
     margin-right: 0px;
   }
+
+    /* signin and sections img need padding to the right to be pushed into the center of the new button size. They need to be pushed because while the text is hidden, it still takes up some space*/
+    #menu p{
+      visibility: hidden;
+      overflow: hidden;
+    }
+
+    #signin p{
+      visibility: hidden;
+      overflow: hidden;
+    }
 
   #sections{
     height: 40px;
@@ -370,23 +405,36 @@ h4{
     padding-right: 10px;
   }
 
+  #sections, #signin{
+      padding: 0px;
+    }
+
+  /* specs to make the post logo and slogan smaller*/
+
   #title img{
     width: 150px;
     margin-top: 0px;
-  }
-
-  #sections, #signin{
-    padding: 0px;
   }
 
   #slogan {
     font-size: 12px;
   }
 
+  /* HEADER END */
+
+  /* CHARTS */
   #post-graph img{
     width: 300px;
   }
+  /* CHARTS END */
 
+  /* ARTICLE CONTENT */
+  .larger-screen{
+     visibility: visible;
+    }
+  /* ARTICLE CONTENT END */
+
+  /* POST-ARTICLE CONTENT*/
   .comments{
     height: 50px;
     width: 300px;
@@ -411,7 +459,6 @@ h4{
     font-size: 16px;
   }
 
- .larger-screen{
-   visibility: visible;
-  }
+  /* POST-ARTICLE CONTENT END*/
+
 }

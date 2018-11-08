@@ -142,6 +142,11 @@ h4{
   font-size: 20px;
 }
 
+#dollar{
+  visibility: hidden;
+  margin-right: -20px;
+}
+
 #search img{
   width: 20px;
 }
@@ -311,4 +316,102 @@ h4{
 
 .bold{
   font-weight: 700;
+}
+
+.larger-screen{
+  visibility: hidden;
+  overflow:hidden;
+ }
+
+@media only screen and (max-width: 600px) {
+
+  #menu p{
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  #signin p{
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  .tryit{
+    height: 40px;
+    width:40px;
+    overflow: hidden;
+  }
+
+  .tryit p{
+    visibility: hidden;
+    overflow: hidden;
+  }
+
+  #dollar{
+    visibility: visible;
+    padding-right: 30px;
+    margin-right: 0px;
+  }
+
+  #sections{
+    height: 40px;
+    width:40px;
+  }
+
+  #sections img{
+    padding-right: 10px;
+  }
+
+  #signin{
+    height: 40px;
+    width:40px;
+  }
+
+  #signin img{
+    padding-right: 10px;
+  }
+
+  #title img{
+    width: 150px;
+    margin-top: 0px;
+  }
+
+  #sections, #signin{
+    padding: 0px;
+  }
+
+  #slogan {
+    font-size: 12px;
+  }
+
+  #post-graph img{
+    width: 300px;
+  }
+
+  .comments{
+    height: 50px;
+    width: 300px;
+    border: 1px solid #444444;
+    border-radius: 3px;
+    margin: 30px 0px 30px 0px;
+  }
+
+  .rec-article h3{
+    font-family: 'Amiri', serif;
+    font-size: 16px;
+  }
+
+  .timestamp{
+    color:#767676;
+    font-size: 16px;
+  }
+
+  .rec-article p{
+    font-family: 'News Cycle', sans-serif;
+    color:#444444;
+    font-size: 16px;
+  }
+
+ .larger-screen{
+   visibility: visible;
+  }
 }

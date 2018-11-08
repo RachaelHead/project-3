@@ -1,0 +1,202 @@
+/* BODY AND TEXT STYLING*/
+
+body{
+  display:grid;
+  grid-template-columns: 15% 70% 15% ;
+  grid-template-rows:100px;
+  margin: 0px;
+}
+
+p{
+  font-family: 'Crimson Text', serif;
+}
+
+h1, h2{
+  font-family: 'Amiri', serif;
+}
+
+h1{
+  font-size: 48px;
+  margin: 50px 0px 20px 0px;
+}
+
+h2{
+  font-size: 32px;
+}
+
+h3{
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0px 0px 5px 0px;
+}
+
+h4{
+  font-family: 'News Cycle', sans-serif;
+  margin: 0px 0px 20px 0px;
+}
+
+/* FLEX SPECS */
+
+.flex{
+    display: flex;
+}
+
+.flex-start{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.direction-column{
+  flex-direction: column;
+}
+
+/* Style the HEADER*/
+
+#header{
+  grid-column: 1/4;
+  grid-row: 1/2;
+  background-color: #000000;
+}
+
+#menu{
+  margin-left: 30px;
+}
+
+#menu p{
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Style 'Democracy dies in Darkness'*/
+
+#slogan {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  color: #ffffff;
+  margin: 0px;
+}
+
+#signup{
+  margin-right: 30px;
+}
+
+#signup p{
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#search, #sections, #signin{
+  border: 1px solid #444444;
+  border-radius: 3px;
+  background-color: #1F1F1F;
+  margin-right: 30px;
+}
+
+#sections, #signin{
+  padding: 0px 20px 0px 20px;
+}
+
+#search{
+  height: 40px;
+  width: 40px;
+}
+
+#sections{
+  height: 40px;
+  width:100px;
+}
+
+#signin{
+  height: 40px;
+  width:90px;
+}
+
+#tryit{
+  border: 1px solid #3D73D5;
+  border-radius: 3px;
+  background-color: #1955A5;
+  height: 40px;
+  width:180px;
+}
+
+#search img{
+  width: 20px;
+}
+#sections img{
+  width: 20px;
+}
+
+#signin img{
+  width: 20px;
+}
+
+#title img{
+  width: 250px;
+  margin-top: 30px;
+}
+
+/* STYLING OF ARTICLE CONTENT */
+
+#article{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #ffffff;
+}
+
+.title-line{
+  height:.5px;
+  background-color: #444444;
+  margin: 10px 0px 10px 0px;
+}
+
+/* AUTHOR SECTION */
+
+.author{
+  padding: 20px 0px 40px 0px;
+}
+
+.author p{
+  font-family: 'News Cycle', sans-serif;
+  margin: 0px 0px 0px 20px;
+}
+
+/* CHARTS */
+
+.source-line{
+  height:1px;
+  background-color: #1F1F1F;
+  margin: 10px 0px 10px 0px;
+}
+
+.source{
+  font-family: 'News Cycle', sans-serif;
+  text-align: right;
+}
+
+#chart1{
+  height: 700px;
+}
+
+#chart2{
+  height: 500px;
+}
+
+#linegraph{
+  height: 500px;
+}

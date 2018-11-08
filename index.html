@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project 3</title>
+  <!---my CSS--->
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <!---Taucharts CSS--->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.css">
+  <!---Data Tables CSS--->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <!---Google Fonts--->
+  <link href="https://fonts.googleapis.com/css?family=Amiri:400,400i,700,700i|Crimson+Text:400,400i,600,600i,700,700i|News+Cycle:400,700" rel="stylesheet">
+</head>
+<body>
+
+  <div id="header" class="flex-space-between">
+    <div id="menu" class="flex-center" >
+      <div id="search" class="flex-center">
+        <img src='img/search.PNG'></img>
+      </div>
+      <div id="sections" class="flex-space-between">
+        <p> Sections </p>
+        <img src='img/menu.PNG'></img>
+      </div>
+    </div>
+
+    <div id="title" class="flex-center direction-column">
+    <img src="img/washington-post-logo-white.png"></img>
+    <p id="slogan"> Democracy dies in Darkness</p>
+    </div>
+
+    <div id="signup" class="flex-center">
+      <div id="signin" class="flex-space-between">
+        <p> Sign In </p>
+        <img src='img/profile.PNG'></img>
+      </div>
+      <div id="tryit" class="flex-center">
+        <p> Try 1 Month for $1 </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="article">
+    <h1>What drives Obesity?</h1>
+    <div class="title-line"></div>
+    <div class="author flex-start">
+      <img src="img/author.PNG"></img>
+      <div>
+        <p> By <a href="#"> Rachael Head </a> </p>
+        <p> Student, Interactive Multimedia</p>
+        <p> November 8th </p>
+      </div>
+    </div>
+    <div>
+      <h3>The Obesity Rate and Income</h3>
+      <h4>The Obsesity Rate and Median Household Income by Census Tract</h4>
+      <div id="chart1">
+      <!---content will go here--->
+      </div>
+      <div class="source-line"></div>
+      <p class="source"> Source: Economic Research Service, Department of Agriculture, Food Environment Atlas </p>
+    </div>
+
+    <h2>Where are they getting their food?</h2>
+    <div>
+      <h3>The Obesity Rate and Food Environment</h3>
+      <h4>The Food Environment of the Most Obsese Counties</h4>
+      <table id="table" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>State</th>
+                <th>County</th>
+                <th>Obsesity Rate</th>
+                <th>Grocery stores per thousand people, 2014</th>
+                <th>Club stores per thousand people, 2014</th>
+                <th>Number of convenience stores per thousand people, 2014</th>
+                <th>Fast food restaurants per thousand people, 2014</th>
+            </tr>
+        </thead>
+      </table>
+      <div class="source-line"></div>
+      <p class="source"> Source: Economic Research Service, Department of Agriculture, Food Environment Atlas </p>
+    </div>
+
+    <div>
+      <h3>The Obesity Rate and Access to Stores</h3>
+      <h4>The Adult Obsesity Rate and Population with Low Access to Stores</h4>
+      <div id="chart2">
+      </div>
+      <div class="source-line"></div>
+      <p class="source"> Source: Economic Research Service, Department of Agriculture, Food Environment Atlas </p>
+    </div>
+
+
+    <h2>More sugar, please!</h2>
+    <div>
+      <h3>Sugar Deliveries by User</h3>
+      <h4>Sugar Deliveries for Human Consumption by User 1997-2017 </h4>
+      <div id="linegraph">
+      <!---content will go here--->
+      </div>
+      <div class="source-line"></div>
+      <p class="source"> Source: Economic Research Service, Department of Agriculture, Sugar and Sweeteners Yearbook Tables </p>
+    </div>
+
+
+  </div>
+
+  <!--<div>
+    <h3>Credit<h3>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      <div>Icons made by <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </div>
+  --->
+
+
+
+<!---jQuery--->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<!---D3--->
+<script src="https://cdn.jsdelivr.net/npm/d3@4.13.0/build/d3.min.js" charset="utf-8"></script>
+<!---TauCharts--->
+<script src="https://cdn.jsdelivr.net/npm/taucharts@2/dist/taucharts.min.js" type="text/javascript"></script>
+<!---Data Tables--->
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<!---Scripts--->
+<script src="js/scripts.js"></script>
+</body>
+</html>

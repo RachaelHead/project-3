@@ -9,6 +9,7 @@ body{
 
 p{
   font-family: 'Crimson Text', serif;
+  font-size: 16px;
 }
 
 h1, h2{
@@ -80,6 +81,7 @@ h4{
   font-family: 'News Cycle', sans-serif;
   font-weight: 700;
   color: #ffffff;
+  font-size: 18px;
 }
 
 /* Style 'Democracy dies in Darkness'*/
@@ -87,7 +89,7 @@ h4{
 #slogan {
   font-family: 'Crimson Text', serif;
   font-style: italic;
-  color: #ffffff;
+  color: #DFDFDF;
   margin: 0px;
 }
 
@@ -99,6 +101,7 @@ h4{
   font-family: 'News Cycle', sans-serif;
   font-weight: 700;
   color: #ffffff;
+  font-size: 20px;
 }
 
 #search, #sections, #signin{
@@ -127,12 +130,16 @@ h4{
   width:90px;
 }
 
-#tryit{
+.tryit{
   border: 1px solid #3D73D5;
   border-radius: 3px;
   background-color: #1955A5;
   height: 40px;
   width:180px;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 #search img{
@@ -148,7 +155,7 @@ h4{
 
 #title img{
   width: 250px;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 /* STYLING OF ARTICLE CONTENT */
@@ -160,8 +167,8 @@ h4{
 }
 
 .title-line{
-  height:.5px;
-  background-color: #444444;
+  height:1px;
+  background-color: #DFDFDF;
   margin: 10px 0px 10px 0px;
 }
 
@@ -199,4 +206,42 @@ h4{
 
 #linegraph{
   height: 500px;
+}
+
+.comments p{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.comments{
+  height: 50px;
+  width: 400px;
+  border: 1px solid #444444;
+  border-radius: 3px;
+  margin: 30px 0px 30px 0px;
+}
+
+.comment-section h3{
+  font-size: 30px;
+}
+
+.comment-section p{
+  font-size: 20px;
+}
+
+.post-ad{
+  height:200px;
+  background-color: #DFDFDF;
+  border-radius: 3px;
+}
+
+.post-ad h3{
+  font-family: 'Amiri', serif;
+  font-size: 30px;
+}
+
+.post-ad p{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 18px;
 }
